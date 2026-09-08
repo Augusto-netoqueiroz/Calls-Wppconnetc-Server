@@ -19,7 +19,8 @@ Laboratório open source para estudar e implementar chamadas de voz e recuperaç
 | Frente | Estado |
 |---|---|
 | Inventário de produção | Confirmado |
-| WPPConnect/WA-JS carregados | Confirmado |
+| Versões efetivamente carregadas | Confirmado |
+| Análise do código upstream de chamadas | Concluída |
 | Sinalização de chamada no navegador | Parcialmente confirmada |
 | Pesquisa de histórico offline | Em investigação |
 | Áudio virtual do Chromium | Não testado |
@@ -28,6 +29,12 @@ Laboratório open source para estudar e implementar chamadas de voz e recuperaç
 | Concorrência entre sessões | Não testada |
 
 Consulte [STATUS.md](STATUS.md) para evidências, hipóteses e pendências.
+
+## Descoberta principal da Fase 0
+
+Na combinação WPPConnect 2.3.0 + WA-JS 4.6.0, o caminho nativo de VoIP mantém a chamada em `CallStore.activeCall`. Entretanto, o listener legado exposto pelo WPPConnect 2.3.0 observa apenas eventos `add` da coleção. A hipótese é que chamadas nativas possam não chegar ao `client.onIncomingCall`, apesar de existirem no navegador.
+
+Veja a análise e os links para o código upstream em [docs/upstream-call-analysis.md](docs/upstream-call-analysis.md).
 
 ## Arquitetura candidata
 
@@ -49,6 +56,8 @@ A candidata atual para laboratório é PulseAudio + Baresip. Isso ainda não é 
 
 - `docs/architecture.md`: arquitetura e limites entre componentes;
 - `docs/calls-poc.md`: fases e critérios da prova de conceito;
+- `docs/upstream-call-analysis.md`: revisão do WPPConnect 2.3.0 e WA-JS 4.6.0;
+- `docs/test-evidence-template.md`: roteiro para registrar testes sanitizados;
 - `docs/offline-message-sync.md`: descobertas sobre histórico e contexto de mensagens;
 - `docs/fork-strategy.md`: como transformar o laboratório em fork sem perder atualizações upstream;
 - `research/browser/`: scripts somente leitura para o console do WhatsApp Web;
