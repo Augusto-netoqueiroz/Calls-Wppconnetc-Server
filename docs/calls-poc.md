@@ -26,6 +26,7 @@ Em uma conta e processo de laboratório:
 
 ## Fase 2 — Áudio do Chromium
 
+- executar `AUDIO-00` a `AUDIO-05` descritos em `audio-feasibility-study.md`;
 - criar entrada e saída virtuais exclusivas;
 - confirmar que o Chromium headless reconhece os dispositivos;
 - capturar o áudio remoto;

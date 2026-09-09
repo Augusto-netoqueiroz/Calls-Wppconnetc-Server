@@ -58,6 +58,7 @@ A candidata atual para laboratório é PulseAudio + Baresip. Isso ainda não é 
 - `docs/calls-poc.md`: fases e critérios da prova de conceito;
 - `docs/upstream-call-analysis.md`: revisão do WPPConnect 2.3.0 e WA-JS 4.6.0;
 - `docs/call-signaling-test-plan.md`: execução controlada dos testes `CALL-01` a `CALL-05`;
+- `docs/audio-feasibility-study.md`: compatibilidade dos pacotes e desenho dos testes de áudio;
 - `docs/test-evidence-template.md`: roteiro para registrar testes sanitizados;
 - `docs/offline-message-sync.md`: descobertas sobre histórico e contexto de mensagens;
 - `docs/fork-strategy.md`: como transformar o laboratório em fork sem perder atualizações upstream;
