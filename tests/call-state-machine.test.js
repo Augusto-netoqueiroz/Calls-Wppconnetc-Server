@@ -77,6 +77,16 @@ test('timeout rejeita os lados ainda tocando sem duplicar ações', () => {
   assert.equal(call.dispatch(EVENTS.TIMEOUT).ignored, true);
 });
 
+test('falha de mídia encerra os dois lados ativos', () => {
+  const call = activeWhatsappInboundCall();
+
+  const failed = call.dispatch(EVENTS.MEDIA_FAILED);
+
+  assert.equal(failed.state, STATES.FAILED);
+  assert.deepEqual(failed.actions, [ACTIONS.END_WHATSAPP, ACTIONS.HANGUP_SIP]);
+  assert.equal(call.snapshot().terminalReason, 'media_failed');
+});
+
 test('impede mídia antes dos dois lados estarem ativos', () => {
   const call = new CallStateMachine();
   call.dispatch(EVENTS.WHATSAPP_INCOMING);

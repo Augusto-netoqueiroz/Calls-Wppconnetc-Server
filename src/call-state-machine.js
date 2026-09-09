@@ -23,6 +23,7 @@ const EVENTS = Object.freeze({
   MEDIA_STOPPED: 'media_stopped',
   WHATSAPP_FAILED: 'whatsapp_failed',
   SIP_FAILED: 'sip_failed',
+  MEDIA_FAILED: 'media_failed',
   TIMEOUT: 'timeout'
 });
 
@@ -138,6 +139,9 @@ class CallStateMachine {
     } else if (event === EVENTS.SIP_FAILED) {
       this.sip = 'ended';
       this.fail('sip_failed', actions);
+    } else if (event === EVENTS.MEDIA_FAILED) {
+      this.media = 'stopped';
+      this.fail('media_failed', actions);
     } else if (event === EVENTS.TIMEOUT) {
       this.fail('timeout', actions);
     }
