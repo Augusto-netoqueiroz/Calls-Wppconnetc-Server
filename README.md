@@ -62,12 +62,13 @@ A candidata atual para laboratório é PulseAudio + Baresip. Isso ainda não é 
 - `docs/baresip-control.md`: protocolo e adaptador Node para controle local do Baresip;
 - `docs/call-state-machine.md`: sincronização pura dos estados WhatsApp, SIP e mídia;
 - `docs/call-orchestrator.md`: execução sequencial das ações e compensação de falhas;
+- `docs/whatsapp-call-adapter.md`: encapsulamento testável das APIs de chamada no navegador;
 - `docs/test-evidence-template.md`: roteiro para registrar testes sanitizados;
 - `docs/offline-message-sync.md`: descobertas sobre histórico e contexto de mensagens;
 - `docs/fork-strategy.md`: como transformar o laboratório em fork sem perder atualizações upstream;
 - `research/browser/`: scripts somente leitura para o console do WhatsApp Web;
 - `research/node/`: observadores sanitizados para a API pública do WPPConnect;
-- `src/`: adaptadores e orquestração com testes locais, ainda sem integração ao fork;
+- `src/`: adaptadores e orquestração com testes locais, ainda sem integração ao fork ou à produção;
 - `scripts/diagnostics/`: inventário seguro dos servidores.
 
 ## Regra de trabalho
