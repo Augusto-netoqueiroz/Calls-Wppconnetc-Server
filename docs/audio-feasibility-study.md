@@ -11,6 +11,7 @@ O pacote `baresip-core` 1.0.0-4build14 do Ubuntu 24.04 inclui:
 - `alsa.so`;
 - `ctrl_tcp.so`;
 - `g711.so`;
+- `menu.so`;
 - `opus.so`.
 
 Ele **não inclui `pulse.so`**, embora esse módulo exista no código-fonte do Baresip 1.0.0. Portanto, a configuração inicialmente considerada com `audio_player pulse,...` e `audio_source pulse,...` não funciona apenas instalando os pacotes padrão.
