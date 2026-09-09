@@ -60,6 +60,7 @@ A candidata atual para laboratório é PulseAudio + Baresip. Isso ainda não é 
 - `docs/call-signaling-test-plan.md`: execução controlada dos testes `CALL-01` a `CALL-05`;
 - `docs/audio-feasibility-study.md`: compatibilidade dos pacotes e desenho dos testes de áudio;
 - `docs/baresip-control.md`: protocolo e adaptador Node para controle local do Baresip;
+- `docs/call-state-machine.md`: sincronização pura dos estados WhatsApp, SIP e mídia;
 - `docs/test-evidence-template.md`: roteiro para registrar testes sanitizados;
 - `docs/offline-message-sync.md`: descobertas sobre histórico e contexto de mensagens;
 - `docs/fork-strategy.md`: como transformar o laboratório em fork sem perder atualizações upstream;

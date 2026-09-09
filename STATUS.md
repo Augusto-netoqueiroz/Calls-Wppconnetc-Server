@@ -19,6 +19,7 @@ Atualizado em 9 de setembro de 2026.
 - `baresip-core` do Ubuntu 24.04 não fornece `pulse.so`, mas fornece `alsa.so`, `ctrl_tcp.so` e `g711.so`;
 - `libasound2-plugins` fornece a ponte ALSA→PulseAudio usada pela arquitetura candidata revisada;
 - cliente Node do `ctrl_tcp` implementado e validado somente contra servidor TCP simulado;
+- máquina de estados bidirecional implementada e validada sem efeitos externos;
 - a camada de áudio virtual e o cliente SIP ainda não estavam instalados no momento do inventário.
 
 ## Hipótese prioritária
@@ -32,6 +33,7 @@ O `client.onIncomingCall` do WPPConnect 2.3.0 pode não detectar chamadas do cam
 - áudio no Chromium headless;
 - roteamento real do Baresip por `alsa,pulse`;
 - comandos e eventos do adaptador contra uma instância Baresip real;
+- integração da máquina de estados com os adaptadores reais;
 - isolamento por sessão;
 - registro SIP, RTP e NAT;
 - áudio bidirecional WhatsApp ↔ Asterisk;
