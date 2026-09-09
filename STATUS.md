@@ -1,6 +1,6 @@
 # Estado da investigação
 
-Atualizado em 8 de setembro de 2026.
+Atualizado em 9 de setembro de 2026.
 
 ## Confirmado
 
@@ -15,6 +15,7 @@ Atualizado em 8 de setembro de 2026.
 - o listener legado do WPPConnect 2.3.0 observa `CallStore.on('add')`;
 - o WA-JS 4.6.0 possui evento próprio que também intercepta `setActiveCall`;
 - foram identificados campos de contexto CTWA, anúncio, campanha, template, referral e entry point;
+- o roteiro de laboratório para `CALL-01` a `CALL-05` está preparado com coleta sanitizada;
 - a camada de áudio virtual e o cliente SIP ainda não estavam instalados no momento do inventário.
 
 ## Hipótese prioritária
