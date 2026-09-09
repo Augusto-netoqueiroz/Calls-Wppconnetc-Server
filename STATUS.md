@@ -22,6 +22,7 @@ Atualizado em 9 de setembro de 2026.
 - máquina de estados bidirecional implementada e validada sem efeitos externos;
 - orquestrador dos adaptadores implementado e validado somente com mocks;
 - adaptador WhatsApp/Puppeteer implementado e validado somente com página simulada;
+- controlador de sessão implementado e validado com os três adaptadores simulados;
 - a camada de áudio virtual e o cliente SIP ainda não estavam instalados no momento do inventário.
 
 ## Hipótese prioritária

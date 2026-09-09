@@ -91,6 +91,10 @@ class CallOrchestrator extends EventEmitter {
     return this.handleEvent(EVENTS.MEDIA_STOPPED);
   }
 
+  onMediaFailed() {
+    return this.handleEvent(EVENTS.MEDIA_FAILED);
+  }
+
   handleEvent(event) {
     return this.enqueue(() => this.process(event));
   }

@@ -63,6 +63,7 @@ A candidata atual para laboratório é PulseAudio + Baresip. Isso ainda não é 
 - `docs/call-state-machine.md`: sincronização pura dos estados WhatsApp, SIP e mídia;
 - `docs/call-orchestrator.md`: execução sequencial das ações e compensação de falhas;
 - `docs/whatsapp-call-adapter.md`: encapsulamento testável das APIs de chamada no navegador;
+- `docs/call-session-controller.md`: ligação ordenada entre WhatsApp, SIP, mídia e orquestrador;
 - `docs/test-evidence-template.md`: roteiro para registrar testes sanitizados;
 - `docs/offline-message-sync.md`: descobertas sobre histórico e contexto de mensagens;
 - `docs/fork-strategy.md`: como transformar o laboratório em fork sem perder atualizações upstream;
